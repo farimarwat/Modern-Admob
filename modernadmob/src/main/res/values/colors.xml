@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorprimary">#1976d2</color>
+    <color name="colorprimarydark">#004ba0</color>
+    <color name="colorprimarylight">#63a4ff</color>
+    <color name="colortextonprimary">#ffffff</color>
+    <color name="colortextonprimarydark">#ffffff</color>
+    <color name="colortextonprimarylight">#000000</color>
+    <color name="colorgreenprimary">#00c853</color>
+    <color name="colorgreenprimarydark">#009624</color>
+    <color name="colorgreenprimarylight">#5efc82</color>
+
+    <color name="headline">@color/colorprimarydark</color>
+    <color name="body">@color/colorprimarylight</color>
+    <color name="starrating">@color/colorgreenprimary</color>
+</resources>

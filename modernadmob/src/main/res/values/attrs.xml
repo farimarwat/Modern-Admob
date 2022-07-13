@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AdmobView">
+        <attr name="av_adtype" format="enum">
+            <enum name="AD_TYPE_SMALL" value="1"/>
+            <enum name="AD_TYPE_MEDIUM" value="2"/>
+        </attr>
+        <attr name="av_backgroundBadge" format="reference"/>
+        <attr name="av_backgroundBody" format="reference"/>
+        <attr name="av_customTemplate" format="reference"/>
+        <!-- Headline -->
+        <attr name="av_HeadlineColor" format="color"/>
+        <attr name="av_HeadlineTextSize" format="dimension"/>
+        <attr name="av_HeadlineFontFamily" format="reference"/>
+        <!-- Body -->
+        <attr name="av_BodyTextColor" format="color"/>
+        <attr name="av_BodyTextSize" format="dimension"/>
+        <attr name="av_BodyTextFontFamily" format="reference"/>
+        <!--Star Rating -->
+        <attr name="av_StarRatingColor" format="color"/>
+    </declare-styleable>
+</resources>
