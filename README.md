@@ -4,6 +4,9 @@ Modern Admob is a library which reduce your code up to 70% while implementing ad
 - Fully customizable
 - Builtin Templates (According to google guidelines)
 - Add your own custom template
+
+![Medium Size](medium.png)
+![Small Size](small.png)
 ### Pre Steps:
 Add this inside application tag in your AndroidManifest.xml file:
 ```
