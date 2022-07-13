@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 override fun onAdImpression() {
-                    TODO("Not yet implemented")
+
                 }
 
                 override fun onAdLoaded() {
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 override fun onAdOpened() {
-                    TODO("Not yet implemented")
+
                 }
 
 
