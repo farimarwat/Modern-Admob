@@ -7,6 +7,7 @@ Modern Admob is a library which reduce your code up to 70% while implementing ad
 
 ![Medium Size](medium.png)
 ![Small Size](small.png)
+
 ### Pre Steps:
 Add this inside application tag in your AndroidManifest.xml file:
 ```
@@ -104,7 +105,7 @@ There are two templates at moment. I will add more in next version
 Note: If you have made a custom template and want to share with the community then kindly send it at: farimarwat@gmail.com. I will add it with your name in next version.
 
 ### Custom Template
-***Note: If you want to use your own template/layout for native ad then keep the ids according to this template otherwise it will not work. How ever you can change the layout as you wish***
+***Note: If you want to use your own template/layout for native ad then keep the ids according to this template otherwise it will not work. How ever you can change the layout as you wish. You can also remove views according to your need e.g. remove rating bar etc***
 
 ### Sample Custom Layout
 - Create a layout file in layout folder
