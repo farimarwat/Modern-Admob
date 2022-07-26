@@ -105,8 +105,11 @@ class MainActivity : AppCompatActivity() {
 ```
 ### Built in Templates
 There are two templates at moment. I will add more in next version
-- Medium
-- Small
+- Medium Default
+- Medium Mini
+- Small Default
+- Small Mini
+
 Note: If you have made a custom template and want to share with the community then kindly send it at: farimarwat@gmail.com. I will add it with your name in next version.
 
 ### Custom Template
