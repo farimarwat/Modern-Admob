@@ -6,6 +6,8 @@
         <entry key="..\:/Users/BISMILLAH/StudioProjects/ModernAdmob/app/src/main/res/drawable/bg_adbadge.xml" value="0.1105" />
         <entry key="..\:/Users/BISMILLAH/StudioProjects/ModernAdmob/app/src/main/res/drawable/bg_badge.xml" value="0.1285" />
         <entry key="..\:/Users/BISMILLAH/StudioProjects/ModernAdmob/app/src/main/res/drawable/bg_body.xml" value="0.1285" />
+        <entry key="..\:/Users/BISMILLAH/StudioProjects/ModernAdmob/app/src/main/res/drawable/bg_btn_action.xml" value="0.108" />
+        <entry key="..\:/Users/BISMILLAH/StudioProjects/ModernAdmob/app/src/main/res/drawable/bg_button.xml" value="0.1275" />
         <entry key="..\:/Users/BISMILLAH/StudioProjects/ModernAdmob/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/BISMILLAH/StudioProjects/ModernAdmob/app/src/main/res/layout/ad_small_default.xml" value="0.15104166666666666" />
         <entry key="..\:/Users/BISMILLAH/StudioProjects/ModernAdmob/modernadmob/src/main/res/drawable/bg_adbadge.xml" value="0.1105" />
@@ -16,6 +18,7 @@
         <entry key="..\:/Users/BISMILLAH/StudioProjects/ModernAdmob/modernadmob/src/main/res/layout/ad_medium_mini.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/BISMILLAH/StudioProjects/ModernAdmob/modernadmob/src/main/res/layout/ad_small.xml" value="0.16822916666666668" />
         <entry key="..\:/Users/BISMILLAH/StudioProjects/ModernAdmob/modernadmob/src/main/res/layout/ad_small_default.xml" value="0.25" />
+        <entry key="..\:/Users/BISMILLAH/StudioProjects/ModernAdmob/modernadmob/src/main/res/layout/ad_small_mini.xml" value="0.25" />
         <entry key="..\:/Users/BISMILLAH/StudioProjects/ModernAdmob/modernadmob/src/main/res/layout/add_appinstall_medium.xml" value="0.25" />
       </map>
     </option>

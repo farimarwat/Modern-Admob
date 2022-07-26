@@ -2,6 +2,7 @@ package pk.farimarwat.modernadmob
 
 import android.content.Context
 import android.content.res.TypedArray
+import android.graphics.Color
 import android.util.AttributeSet
 import android.util.Log
 import android.util.TypedValue
@@ -26,7 +27,7 @@ class AdmobView(context:Context, attrs:AttributeSet):RelativeLayout(context,attr
     private var colortextonprimary = 0
     private var colortextonprimaryDark = 0
     private var colortextonprimaryLight = 0
-    private var adtype = AD_TYPE_MEDIUM
+    private var adtype = AD_TYPE_MEDIUM_DEFAULT
     private var mCustonTemplate = 0
     private var mAdview:NativeAdView? = null
     private var mListener:ModernAdmobListener? = null
@@ -55,19 +56,27 @@ class AdmobView(context:Context, attrs:AttributeSet):RelativeLayout(context,attr
             attrs,
             R.styleable.AdmobView,0,0
         )
-        adtype = ta.getInteger(R.styleable.AdmobView_av_adtype, AD_TYPE_MEDIUM)
+        adtype = ta.getInteger(R.styleable.AdmobView_av_adtype, AD_TYPE_MEDIUM_DEFAULT)
         mCustonTemplate = ta.getResourceId(R.styleable.AdmobView_av_customTemplate,0)
         if(mCustonTemplate > 0){
             val view = inflate(context,mCustonTemplate,this)
             mAdview = view.findViewById(R.id.nativead)
         } else {
             when(adtype){
-                AD_TYPE_SMALL ->{
+                AD_TYPE_SMALL_DEFAULT ->{
                     val view = inflate(context,R.layout.ad_small_default,this)
                     mAdview = view.findViewById(R.id.nativead)
                 }
-                AD_TYPE_MEDIUM ->{
+                AD_TYPE_SMALL_MINI ->{
+                    val view = inflate(context,R.layout.ad_small_mini,this)
+                    mAdview = view.findViewById(R.id.nativead)
+                }
+                AD_TYPE_MEDIUM_DEFAULT ->{
                     val view = inflate(context,R.layout.ad_medium_default,this)
+                    mAdview = view.findViewById(R.id.nativead)
+                }
+                AD_TYPE_MEDIUM_MINI ->{
+                    val view = inflate(context,R.layout.ad_medium_mini,this)
                     mAdview = view.findViewById(R.id.nativead)
                 }
             }
@@ -104,10 +113,10 @@ class AdmobView(context:Context, attrs:AttributeSet):RelativeLayout(context,attr
 
         mActionButton = mAdview?.findViewById(R.id.ad_call_to_action)
         mBadge = mAdview?.findViewById(R.id.txt_ad_badge)
-        setupAttributes(context,attrs)
+        setupAttributes(context)
     }
 
-    fun setupAttributes(context: Context,attrs: AttributeSet){
+    fun setupAttributes(context: Context){
 
         val badge_background = ta.getDrawable(
             R.styleable.AdmobView_av_backgroundBadge
@@ -121,6 +130,7 @@ class AdmobView(context:Context, attrs:AttributeSet):RelativeLayout(context,attr
                 context,R.drawable.bg_adbadge
             )
         }
+
 
         val body_background = ta.getDrawable(
             R.styleable.AdmobView_av_backgroundBody
@@ -139,6 +149,7 @@ class AdmobView(context:Context, attrs:AttributeSet):RelativeLayout(context,attr
         headlineAttributes()
         bodyAttributes()
         starRatingAttributes()
+        actionButton()
         ta.recycle()
     }
     fun headlineAttributes(){
@@ -146,6 +157,7 @@ class AdmobView(context:Context, attrs:AttributeSet):RelativeLayout(context,attr
         val headlinecolor = ta.getColor(
             R.styleable.AdmobView_av_HeadlineColor,0
         )
+        mHeadline?.isSelected = true
         if(headlinecolor != 0) {
             mHeadline?.setTextColor(headlinecolor)
         } else {
@@ -206,6 +218,22 @@ class AdmobView(context:Context, attrs:AttributeSet):RelativeLayout(context,attr
             drawable?.let {
                 DrawableCompat.setTint(it,starrating_default)
             }
+        }
+    }
+    fun actionButton(){
+        val actionbutton_background = ta.getColor(
+            R.styleable.AdmobView_av_actionButtonColor,0
+        )
+        if(actionbutton_background != 0){
+            mActionButton?.setBackgroundColor(actionbutton_background)
+        }
+
+
+        val actionbutton_textcolor = ta.getColor(
+            R.styleable.AdmobView_av_actionButtonTextColor,0
+        )
+        if(actionbutton_textcolor != 0){
+            mActionButton?.setTextColor(actionbutton_textcolor)
         }
     }
     fun loadAd(context: Context,
@@ -318,8 +346,11 @@ class AdmobView(context:Context, attrs:AttributeSet):RelativeLayout(context,attr
         val COLOR_TEXT_ONPRIMARY = R.color.colortextonprimary
         val COLOR_TEXT_ONPRIMARYDARK = R.color.colortextonprimarydark
         val COLOR_TEXT_ONPRIMARYLIGHT = R.color.colortextonprimarylight
-        val AD_TYPE_SMALL = 1
-        val AD_TYPE_MEDIUM = 2
+        val AD_TYPE_SMALL_DEFAULT = 1
+        val AD_TYPE_SMALL_MINI = 2
+        val AD_TYPE_MEDIUM_DEFAULT = 3
+        val AD_TYPE_MEDIUM_MINI = 4
+
 
         val HEAD_TEXTSIZE = R.dimen.headlinetext
     }

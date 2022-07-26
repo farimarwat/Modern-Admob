@@ -2,8 +2,10 @@
 <resources>
     <declare-styleable name="AdmobView">
         <attr name="av_adtype" format="enum">
-            <enum name="AD_TYPE_SMALL" value="1"/>
-            <enum name="AD_TYPE_MEDIUM" value="2"/>
+            <enum name="AD_TYPE_SMALL_DEFAULT" value="1"/>
+            <enum name="AD_TYPE_SMALL_MINI" value="2"/>
+            <enum name="AD_TYPE_MEDIUM_DEFAULT" value="3"/>
+            <enum name="AD_TYPE_MEDIUM_MINI" value="4"/>
         </attr>
         <attr name="av_backgroundBadge" format="reference"/>
         <attr name="av_backgroundBody" format="reference"/>
@@ -18,5 +20,7 @@
         <attr name="av_BodyTextFontFamily" format="reference"/>
         <!--Star Rating -->
         <attr name="av_StarRatingColor" format="color"/>
+        <attr name="av_actionButtonColor" format="color"/>
+        <attr name="av_actionButtonTextColor" format="color"/>
     </declare-styleable>
 </resources>
