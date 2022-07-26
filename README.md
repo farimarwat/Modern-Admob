@@ -47,13 +47,15 @@ Add the dependency:
         app:av_HeadlineFontFamily="@font/poppins"
         app:av_HeadlineColor="@color/teal_200"
         app:av_backgroundBadge="@drawable/bg_badge"
-        app:av_adtype="AD_TYPE_MEDIUM"
+        app:av_adtype="AD_TYPE_MEDIUM_MINI"
         app:av_backgroundBody="@drawable/bg_adbody"
         app:av_BodyTextColor="#FF9800"
         app:av_BodyTextFontFamily="@font/poppins"
         app:av_BodyTextSize="18dp"
         app:av_StarRatingColor="#000000"
         app:av_customTemplate="@layout/customtemplate"
+        app:av_actionButtonColor="@color/greyPrimary"
+        app:av_actionButtonTextColor="@color/white"
         />
 ```
 ### Step 3: Manage code
