@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         MobileAds.initialize(this)
         binding.myads
-            .loadAd(this,"your-key-goes-here",
+            .loadAd(this,"ca-app-pub-3940256099942544/1044960115",
             object : AdmobView.ModernAdmobListener {
                 override fun onAdClicked() {
 

@@ -4,11 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/BISMILLAH/StudioProjects/ModernAdmob/app/src/main/res/drawable/bg_adbadge.xml" value="0.1105" />
-        <entry key="..\:/Users/BISMILLAH/StudioProjects/ModernAdmob/app/src/main/res/layout/activity_main.xml" value="0.15572916666666667" />
+        <entry key="..\:/Users/BISMILLAH/StudioProjects/ModernAdmob/app/src/main/res/drawable/bg_badge.xml" value="0.1285" />
+        <entry key="..\:/Users/BISMILLAH/StudioProjects/ModernAdmob/app/src/main/res/drawable/bg_body.xml" value="0.1285" />
+        <entry key="..\:/Users/BISMILLAH/StudioProjects/ModernAdmob/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/BISMILLAH/StudioProjects/ModernAdmob/app/src/main/res/layout/ad_small_default.xml" value="0.15104166666666666" />
         <entry key="..\:/Users/BISMILLAH/StudioProjects/ModernAdmob/modernadmob/src/main/res/drawable/bg_adbadge.xml" value="0.1105" />
         <entry key="..\:/Users/BISMILLAH/StudioProjects/ModernAdmob/modernadmob/src/main/res/drawable/bg_adbody.xml" value="0.1" />
+        <entry key="..\:/Users/BISMILLAH/StudioProjects/ModernAdmob/modernadmob/src/main/res/drawable/bg_bodymain.xml" value="0.1275" />
         <entry key="..\:/Users/BISMILLAH/StudioProjects/ModernAdmob/modernadmob/src/main/res/layout/ad_medium.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/BISMILLAH/StudioProjects/ModernAdmob/modernadmob/src/main/res/layout/ad_medium_default.xml" value="0.11770833333333333" />
+        <entry key="..\:/Users/BISMILLAH/StudioProjects/ModernAdmob/modernadmob/src/main/res/layout/ad_medium_mini.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/BISMILLAH/StudioProjects/ModernAdmob/modernadmob/src/main/res/layout/ad_small.xml" value="0.16822916666666668" />
         <entry key="..\:/Users/BISMILLAH/StudioProjects/ModernAdmob/modernadmob/src/main/res/layout/ad_small_default.xml" value="0.25" />
         <entry key="..\:/Users/BISMILLAH/StudioProjects/ModernAdmob/modernadmob/src/main/res/layout/add_appinstall_medium.xml" value="0.25" />

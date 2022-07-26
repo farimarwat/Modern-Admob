@@ -6,7 +6,7 @@
     android:layout_margin="8dp"
     app:cardElevation="8dp"
     app:cardCornerRadius="5dp"
-
+    android:background="@drawable/bg_bodymain"
     >
     <com.google.android.gms.ads.nativead.NativeAdView
         android:id="@+id/nativead"
