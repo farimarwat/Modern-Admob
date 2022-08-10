@@ -30,7 +30,7 @@ Add it in your root build.gradle or settings.gradle
 #### 1.2
 Add the dependency:
 ```
-implementation 'com.github.farimarwat:Modern-Admob:1.0'
+implementation 'com.github.farimarwat:Modern-Admob:1.2'
 implementation 'com.google.android.gms:play-services-ads:21.1.0'
 ```
 
