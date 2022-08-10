@@ -29,7 +29,10 @@ Add it in your root build.gradle or settings.gradle
 ```
 #### 1.2
 Add the dependency:
-`implementation 'com.github.farimarwat:Modern-Admob:1.0'`
+```
+implementation 'com.github.farimarwat:Modern-Admob:1.0'
+implementation 'com.google.android.gms:play-services-ads:21.1.0'
+```
 
 ### Step 2: Include xml code
 (Add/Remove properties according to your need)
@@ -47,13 +50,15 @@ Add the dependency:
         app:av_HeadlineFontFamily="@font/poppins"
         app:av_HeadlineColor="@color/teal_200"
         app:av_backgroundBadge="@drawable/bg_badge"
-        app:av_adtype="AD_TYPE_MEDIUM"
+        app:av_adtype="AD_TYPE_MEDIUM_MINI"
         app:av_backgroundBody="@drawable/bg_adbody"
         app:av_BodyTextColor="#FF9800"
         app:av_BodyTextFontFamily="@font/poppins"
         app:av_BodyTextSize="18dp"
         app:av_StarRatingColor="#000000"
         app:av_customTemplate="@layout/customtemplate"
+        app:av_actionButtonColor="@color/greyPrimary"
+        app:av_actionButtonTextColor="@color/white"
         />
 ```
 ### Step 3: Manage code
@@ -99,9 +104,12 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 ### Built in Templates
-There are two templates at moment. I will add more in next version
-- Medium
-- Small
+There are 4 templates at moment. I will add more in next version
+- Medium Default
+- Medium Mini
+- Small Default
+- Small Mini
+
 Note: If you have made a custom template and want to share with the community then kindly send it at: farimarwat@gmail.com. I will add it with your name in next version.
 
 ### Custom Template
