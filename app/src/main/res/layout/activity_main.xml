@@ -19,7 +19,6 @@
         app:av_HeadlineFontFamily="@font/poppins"
         app:av_HeadlineColor="@color/teal_200"
         app:av_backgroundBody="@drawable/bg_body"
-        app:av_adtype="AD_TYPE_SMALL_MINI"
         app:av_BodyTextColor="#FF9800"
         app:av_BodyTextFontFamily="@font/poppins"
         app:av_StarRatingColor="#000000"

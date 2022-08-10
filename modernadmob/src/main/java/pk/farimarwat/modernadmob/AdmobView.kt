@@ -60,24 +60,24 @@ class AdmobView(context:Context, attrs:AttributeSet):RelativeLayout(context,attr
         mCustonTemplate = ta.getResourceId(R.styleable.AdmobView_av_customTemplate,0)
         if(mCustonTemplate > 0){
             val view = inflate(context,mCustonTemplate,this)
-            mAdview = view.findViewById(R.id.nativead)
+            mAdview = view.findViewById(R.id.nativead) as NativeAdView
         } else {
             when(adtype){
                 AD_TYPE_SMALL_DEFAULT ->{
                     val view = inflate(context,R.layout.ad_small_default,this)
-                    mAdview = view.findViewById(R.id.nativead)
+                    mAdview = view.findViewById(R.id.nativead) as NativeAdView
                 }
                 AD_TYPE_SMALL_MINI ->{
                     val view = inflate(context,R.layout.ad_small_mini,this)
-                    mAdview = view.findViewById(R.id.nativead)
+                    mAdview = view.findViewById(R.id.nativead) as NativeAdView
                 }
                 AD_TYPE_MEDIUM_DEFAULT ->{
                     val view = inflate(context,R.layout.ad_medium_default,this)
-                    mAdview = view.findViewById(R.id.nativead)
+                    mAdview = view.findViewById(R.id.nativead) as NativeAdView
                 }
                 AD_TYPE_MEDIUM_MINI ->{
                     val view = inflate(context,R.layout.ad_medium_mini,this)
-                    mAdview = view.findViewById(R.id.nativead)
+                    mAdview = view.findViewById(R.id.nativead) as NativeAdView
                 }
             }
         }
@@ -321,9 +321,10 @@ class AdmobView(context:Context, attrs:AttributeSet):RelativeLayout(context,attr
             mAdview?.storeView = mStore
         }
 
-        val duration = nativeAd.mediaContent?.duration
-        if(duration != null && duration > 0.0){
-            mAdview?.mediaView = mMedia
+
+        Log.e("TEST","Duration:  ${nativeAd.mediaContent?.duration}")
+        if(nativeAd.mediaContent?.hasVideoContent() == true){
+            mMedia?.setMediaContent(nativeAd.mediaContent!!)
             mMedia?.visibility = View.VISIBLE
         } else {
             if(nativeAd.images.isNotEmpty()){
@@ -334,9 +335,14 @@ class AdmobView(context:Context, attrs:AttributeSet):RelativeLayout(context,attr
         }
 
 
-        mActionButton?.text = nativeAd.callToAction
-        mAdview?.callToActionView = mActionButton
-
+        if(nativeAd.callToAction == null){
+            mActionButton?.visibility = GONE
+        } else {
+            mActionButton?.visibility = VISIBLE
+            mActionButton?.text = nativeAd.callToAction
+            mAdview?.callToActionView = mActionButton
+        }
+        mAdview?.setNativeAd(nativeAd)
     }
 
     companion object {
